@@ -1,0 +1,24 @@
+import React from 'react'
+import { AiToolsData } from '../assets/assets'
+import { useNavigate } from 'react-router-dom'
+import { useUser } from '@clerk/react';
+
+const AiTools = () => { 
+    const navigate = useNavigate();
+    const {user} = useUser();
+  return (
+    <div className='px-4 sm:px-20 xl:px-32 my-24'>
+        <div className='text-center'>
+            <h2 className='text-slate-700 text-[42px] font-semibold'>Powerfull AI Tools</h2>
+            <p className='text-neutral-600 max-w-xl mx-auto leading-8 tracking-wide'> Write smarter, design faster, and boost your productivity with AI.</p>
+        </div> 
+        <div className='flex flex-wrap mt-10 justify-center'>{AiToolsData.map(()=>(
+            <div key={index} className='p-8 m-4 max-w-xs rounded-lg bg-[#FDFDFE] shadow-lg border border-gray-100 hover:-translate-y-1 transition duration-300 cursor-pointer'>
+
+            </div>
+        ))}</div>
+    </div>
+  )
+}
+
+export default AiTools
