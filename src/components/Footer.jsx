@@ -43,7 +43,7 @@ import { assets } from '../assets/assets';
                     </div>
                 </div>
                 <p className="py-4 text-center border-t mt-6 border-slate-200">
-                    Copyright 2025 © <a href="https://prebuiltui.com">PrebuiltUI</a> All Right Reserved.
+                    Copyright 2026 © <a href="">Orbix AI</a> All Right Reserved.
                 </p>
             </footer>
         </>
