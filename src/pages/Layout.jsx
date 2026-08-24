@@ -12,7 +12,7 @@ const Layout = () => {
   return user ? (
     <div> 
       <nav>
-        <img src={assets.logo} onClick={() => navigate('/')} /> 
+        <img className='cursor-pointer w-32 sm:w-44' src={assets.logo} onClick={() => navigate('/')} /> 
         {
           sidebar ? <X onClick={()=> setSidebar(false)} className='w-6 h-6 text-gray-600 sm:hidden'/>
           : <Menu onClick={()=> setSidebar(true)} className='w-6 h-6 text-gray-600 sm:hidden' />
